@@ -1,7 +1,9 @@
 # demo-report-util
 
-The application is a GUI for backend application generating reports in .xlsx and .tab file formates and sending the reports by email.
+The application is a GUI for backend application generating reports in .xlsx and .tab file formats and sending the reports by email.
+
 Wrote on javafx.
+
 Connections to the backend are mocked.
 
 You can:

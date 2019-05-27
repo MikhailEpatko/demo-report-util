@@ -6,6 +6,7 @@ Connections to the backend are mocked.
 
 You can:
 - start the application in IDE;
-- create and start jar-package: `mvn clean package`.
+- create and start jar-package: `mvn clean package`;
+- download and start demo-report-util.jar .
 
 Use any not empty login and password.

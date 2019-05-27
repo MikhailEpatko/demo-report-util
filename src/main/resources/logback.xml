@@ -1,7 +1,7 @@
 <configuration>
 
 
-    <property name="LOG_FILE" value="log/pearl-gui"/>​
+    <property name="LOG_FILE" value="log/gui"/>​
     <property name="CONSOLE_LOG_PATTERN"
               value="%d{yyyy-MM-dd HH:mm:ss.SSS} - %green([%thread]) %highlight(%-5level) %cyan(%logger{15}) - %msg%n" />
 

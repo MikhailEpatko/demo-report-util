@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.epatko.reportutil.controller.ScheduleController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <Text fontSmoothingType="LCD" layoutX="30.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports" AnchorPane.leftAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Text>
+   <ListView fx:id="scheduleSelectReport" blendMode="MULTIPLY" layoutX="30.0" layoutY="55.0" prefHeight="200.0" prefWidth="564.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   <Text fontSmoothingType="LCD" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File format" AnchorPane.leftAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Text>
+   <ListView fx:id="scheduleSelectFormat" layoutY="295.0" prefHeight="51.0" prefWidth="564.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="xlsx" />
+            <String fx:value="tab" />
+         </FXCollections>
+      </items>
+   </ListView>
+   <Text fontSmoothingType="LCD" layoutX="22.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minute (0 - 59)" AnchorPane.leftAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Text>
+   <TextField fx:id="minute" layoutY="380.0" promptText="0 - 59" text="0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </TextField>
+   <Text fontSmoothingType="LCD" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hour (0 - 23)" AnchorPane.leftAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Text>
+   <TextField fx:id="hour" layoutY="450.0" promptText="0 - 23" text="0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </TextField>
+   <Text fontSmoothingType="LCD" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day of Month (1 - 31, * - any day)" AnchorPane.leftAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Text>
+   <TextField fx:id="dayOfMonth" layoutY="520.0" promptText="1 - 31" text="*" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </TextField>
+   <Text fontSmoothingType="LCD" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month (1 - 12, * - any month)" AnchorPane.leftAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Text>
+   <TextField fx:id="month" layoutY="595.0" promptText="1 - 31" text="*" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </TextField>
+   <CheckBox fx:id="dayOfWeek1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutY="725.0" mnemonicParsing="false" text="MON" AnchorPane.leftAnchor="20.0">
+      <font>
+         <Font name="Ubuntu" size="16.0" />
+      </font>
+   </CheckBox>
+   <CheckBox fx:id="dayOfWeek2" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="100.0" layoutY="725.0" mnemonicParsing="false" text="TUE" AnchorPane.leftAnchor="100.0">
+      <font>
+         <Font name="Ubuntu" size="16.0" />
+      </font>
+   </CheckBox>
+   <CheckBox fx:id="dayOfWeek3" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="180.0" layoutY="725.0" mnemonicParsing="false" text="WED" AnchorPane.leftAnchor="180.0">
+      <font>
+         <Font name="Ubuntu" size="16.0" />
+      </font>
+   </CheckBox>
+   <CheckBox fx:id="dayOfWeek4" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="260.0" layoutY="725.0" mnemonicParsing="false" text="THU" AnchorPane.leftAnchor="260.0">
+      <font>
+         <Font name="Ubuntu" size="16.0" />
+      </font>
+   </CheckBox>
+   <CheckBox fx:id="dayOfWeek5" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="360.0" layoutY="725.0" mnemonicParsing="false" text="FRI" AnchorPane.leftAnchor="340.0">
+      <font>
+         <Font name="Ubuntu" size="16.0" />
+      </font>
+   </CheckBox>
+   <Text fontSmoothingType="LCD" layoutX="10.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recipients (comma separated)" AnchorPane.leftAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Text>
+   <TextField fx:id="recipients" layoutX="10.0" layoutY="665.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </TextField>
+   <Button fx:id="btnSchedule" layoutX="47.0" layoutY="800.0" mnemonicParsing="false" onAction="#createTask" prefHeight="40.0" prefWidth="128.0" text="Schedule" AnchorPane.rightAnchor="160.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnBack" layoutX="214.0" layoutY="800.0" mnemonicParsing="false" onAction="#showMainWindow" prefHeight="40.0" prefWidth="128.0" text="Back" AnchorPane.rightAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Button>
+</AnchorPane>

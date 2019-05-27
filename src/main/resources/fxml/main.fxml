@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="290.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.epatko.reportutil.controller.MainController">
+   <padding>
+      <Insets bottom="40.0" left="20.0" right="20.0" top="40.0" />
+   </padding>
+   <Button fx:id="btnDownload" mnemonicParsing="false" onAction="#showDownloadWindow" prefWidth="184.0" text="Download report" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnSchedule" layoutY="49.0" mnemonicParsing="false" onAction="#showSchedulerWindow" prefWidth="184.0" text="Schedule" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Button>
+   <Button fx:id="btnLogin" layoutY="115.0" mnemonicParsing="false" onAction="#logOut" prefWidth="184.0" text="Logout" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="116.0">
+      <font>
+         <Font name="Ubuntu" size="20.0" />
+      </font>
+   </Button>
+</AnchorPane>

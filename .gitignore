@@ -1,0 +1,23 @@
+#
+# Standard ignore list (do not edit manually)
+#
+
+.build
+packages/
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.iws
+*.zip
+.DS_Store
+log/
+*.log
+pom.xml.versionsBackup
+/target
+/out
+
+#
+# Custom ignore list
+#
